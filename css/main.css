@@ -1,0 +1,75 @@
+body {
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+.navbar {
+  background: transparent !important;
+  padding: 1rem;
+  -webkit-transition: background 1s ease 0s;
+  transition: background 1s ease 0s;
+}
+
+.solid {
+  background: #231F5C !important;
+  -webkit-transition: background 1s ease 0s;
+  transition: background 1s ease 0s;
+}
+
+.img {
+  background-image: url("/img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  background-position: center;
+}
+
+.land-text {
+  color: #231F5C;
+  text-align: center;
+}
+
+.land-text h1 {
+  padding-top: 1rem;
+  color: #845B1E;
+}
+
+.land-text h3 {
+  margin-bottom: 2rem;
+  color: #845B1E;
+}
+
+hr {
+  border-bottom: 1px solid #845B1E;
+}
+
+.bg {
+  margin: 2rem;
+  padding: 2rem;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#060426), to(#3A3676));
+  background-image: linear-gradient(to right top, #060426, #3A3676);
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.cardus {
+  color: #D3AB70;
+}
+
+.cardus .icon {
+  text-align: center;
+}
+
+.cardus .txt {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.fas {
+  font-size: 60px;
+  color: #D3AB70;
+}
+/*# sourceMappingURL=main.css.map */
