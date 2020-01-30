@@ -17,27 +17,40 @@ body {
 }
 
 .img {
-  background-image: url("/img/cover.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3))), url("/img/cover.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("/img/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 250px;
+  height: 800px;
   background-position: center;
 }
 
 .land-text {
-  color: #231F5C;
   text-align: center;
+  color: white;
 }
 
 .land-text h1 {
   padding-top: 1rem;
-  color: #845B1E;
 }
 
-.land-text h3 {
+.land-text h2 {
   margin-bottom: 2rem;
-  color: #845B1E;
+}
+
+.land {
+  padding-top: 250px;
+  text-shadow: #474747 3px 5px 2px;
+}
+
+.landis-text {
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  width: 70%;
 }
 
 hr {
