@@ -58,36 +58,103 @@ hr {
 }
 
 .bg {
-  margin: 2rem;
   padding: 2rem;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#060426), to(#3A3676));
   background-image: linear-gradient(to right top, #060426, #3A3676);
   -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 15px;
 }
 
 .cardus {
   color: #D3AB70;
-}
-
-.cardus .icon {
   text-align: center;
 }
 
 .cardus .txt {
-  padding-top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 0;
 }
 
-.fas {
+.icon {
+  text-align: center;
+}
+
+.icon .insideico {
   font-size: 60px;
   color: #D3AB70;
+}
+
+.icon p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.container-fluid {
+  text-align: center;
+  padding: 40px;
+  color: #404040;
+}
+
+.container-fluid h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.container-fluid p {
+  font-size: 1.2rem;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.ic {
+  padding: 40px;
 }
 
 .adv {
   height: 100%;
   width: 100%;
+}
+
+.advan {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.custom {
+  padding: 30px;
+  background-color: #f1f3f7;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #404040;
+  font-size: 1rem;
+}
+
+.display .card-gray {
+  margin-bottom: 10px;
+}
+
+.display .card-gray p {
+  margin: 0;
+}
+
+.display .text {
+  padding-top: 20px;
+}
+
+.display .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

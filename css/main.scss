@@ -16,7 +16,8 @@ $colors: (
     color-secondary-2-2: #A9A23E,
     color-secondary-2-3: #5C5607,
     color-secondary-2-4: #373300,
-    color-white: #fafafa
+    color-white: #fafafa,
+    color-gray: #f1f3f7,
 );
 
 
@@ -76,33 +77,95 @@ hr{
 }
 
 .bg{
-    margin: 2rem ;
+
     padding: 2rem;
     background-image: linear-gradient(to right top, map-get($colors , color-primary-4), map-get($colors , color-primary-2));
     box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-    border-radius: 15px;
 }
 
 .cardus{
     color: map-get($colors , color-secondary-1-1);
-    .icon{
-        text-align: center;
-    }
-
+    text-align: center;
     .txt{
-        padding-top: 20px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 0;
     }
 }
 
-.fas{
-    font-size:60px;
-    color:map-get($colors , color-secondary-1-1);
+
+.icon{
+    text-align: center;
+
+    .insideico{
+        font-size:60px;
+        color:map-get($colors , color-secondary-1-1);
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 100;
+    }
 }
+
+.container-fluid{
+    text-align: center;
+    padding: 40px;
+    color: #404040;
+    
+    h1{
+        font-size: 2.1rem;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.2rem;
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    //mixim p trebuie sa fie width 100% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+.ic{
+    padding: 40px;
+}
+
 
 .adv{
     height: 100%;
     width: 100%;
+}
+
+.advan{
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.custom{
+    padding: 30px;
+    background-color: map-get($colors , color-gray);
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    color: #404040;
+    font-size: 1rem;
+
+    .card-gray{
+        margin-bottom: 10px;
+        p{
+            margin: 0;
+        }
+    }
+
+    .text{
+        padding-top: 20px;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+    }
 }
 
