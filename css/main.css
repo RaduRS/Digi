@@ -157,4 +157,95 @@ hr {
       -ms-flex-align: center;
           align-items: center;
 }
+
+#submit {
+  background-color: #D3AB70;
+  border: 1px solid #A97E3E;
+  color: white;
+  width: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#submit:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 0px;
+}
+
+.booking {
+  padding-bottom: 20px;
+}
+
+.input {
+  height: 40px;
+  background-color: #f1f3f7;
+}
+
+.input2 {
+  background-color: #f1f3f7;
+}
+
+input:hover, .input2:hover {
+  background-color: white;
+}
+
+input:active, .input2:active {
+  background-color: white;
+}
+
+section h1 {
+  padding: 40px;
+  color: #404040;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  margin: 0px auto;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#060426), to(#3A3676));
+  background-image: linear-gradient(to right top, #060426, #3A3676);
+  padding: 0;
+  width: 100%;
+}
+
+.innerfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.logo > img {
+  width: 80%;
+  padding: 10px;
+}
+
+.innerfooter p {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.innerfooter p a {
+  text-decoration: none;
+  color: white;
+}
+
+.innerfooter p a:hover {
+  text-decoration: underline;
+  color: #f1c6ad;
+}
 /*# sourceMappingURL=main.css.map */
