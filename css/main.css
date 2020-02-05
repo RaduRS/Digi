@@ -191,6 +191,8 @@ hr {
 
 input:hover, .input2:hover {
   background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px #8dccff;
+          box-shadow: 0px 0px 10px 0px #8dccff;
 }
 
 input:active, .input2:active {
