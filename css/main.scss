@@ -20,6 +20,14 @@ $colors: (
     color-gray: #f1f3f7,
 );
 
+$mobile: 767px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}){
+        @content;
+    }
+}
+
 
 body{
     background-color: map-get($colors , color-white);
@@ -33,8 +41,10 @@ body{
 }
 
 .solid{
-    background: map-get($colors, color-primary-0) !important; 
+    background: map-get($colors, color-primary-0) !important;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.50);
     transition: background 1s ease 0s;
+    transition: box-shadow 0.5s ease 0s;
 }
 
 
@@ -45,6 +55,29 @@ body{
     width: 100%;
     height: 800px;
     background-position: center;
+}
+
+.btn{
+    color: white;
+    transition:  border-radius 300ms;
+    background-color: map-get($colors,color-secondary-1-2);
+    border-color: map-get($colors,color-secondary-1-2);
+    border-radius: 30px;
+    padding: 15px 48px;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    border-radius: 2px 30px 2px 30px;
+    background-color: map-get($colors,color-secondary-1-1);
+    border-color: map-get($colors,color-secondary-1-1);
+}
+
+.btn:active{
+    border-radius: 2px 30px 2px 30px !important;
+    background-color: map-get($colors,color-secondary-1-1) !important;
+    border-color: map-get($colors,color-secondary-1-1) !important;
+    outline:0 !important;
 }
 
 .land-text{
@@ -65,7 +98,7 @@ body{
 
 .landis-text{
     text-align: center;
-    padding: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 1.3rem;
@@ -73,7 +106,7 @@ body{
 }
 
 hr{
-    border-bottom: 1px solid map-get($colors , color-secondary-1-0);
+    border-bottom: 1px solid map-get($colors , color-secondary-1-1);
 }
 
 .bg{
@@ -161,6 +194,12 @@ hr{
 
     .text{
         padding-top: 20px;
+    }
+
+    @include mobile{
+        .text{
+            text-align: center;
+        }
     }
 
     .row{
@@ -253,4 +292,38 @@ section{
 .innerfooter p a:hover {
     text-decoration: underline;
     color: rgb(241, 198, 173);
+}
+
+.carousel{
+    width: 100%;
+    margin: 2% auto;
+
+    .carousel-item{
+        height: 650px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-top: -100px;
+        background-position: center;
+
+
+        @include mobile{
+            height: 300px;
+        }
+
+        img{
+        padding-top: -200px;
+        margin: auto auto;
+        position: absolute;   
+    top: 50%;
+    transform: translateY(-50%);
+        }
+    }
+
+}
+
+.item{
+    position: relative;
+    height:100%;
 }

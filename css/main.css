@@ -12,8 +12,14 @@ body {
 
 .solid {
   background: #231F5C !important;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
   -webkit-transition: background 1s ease 0s;
   transition: background 1s ease 0s;
+  -webkit-transition: -webkit-box-shadow 0.5s ease 0s;
+  transition: -webkit-box-shadow 0.5s ease 0s;
+  transition: box-shadow 0.5s ease 0s;
+  transition: box-shadow 0.5s ease 0s, -webkit-box-shadow 0.5s ease 0s;
 }
 
 .img {
@@ -24,6 +30,30 @@ body {
   width: 100%;
   height: 800px;
   background-position: center;
+}
+
+.btn {
+  color: white;
+  -webkit-transition: border-radius 300ms;
+  transition: border-radius 300ms;
+  background-color: #A97E3E;
+  border-color: #A97E3E;
+  border-radius: 30px;
+  padding: 15px 48px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  border-radius: 2px 30px 2px 30px;
+  background-color: #D3AB70;
+  border-color: #D3AB70;
+}
+
+.btn:active {
+  border-radius: 2px 30px 2px 30px !important;
+  background-color: #D3AB70 !important;
+  border-color: #D3AB70 !important;
+  outline: 0 !important;
 }
 
 .land-text {
@@ -46,7 +76,7 @@ body {
 
 .landis-text {
   text-align: center;
-  padding: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 1.3rem;
@@ -54,7 +84,7 @@ body {
 }
 
 hr {
-  border-bottom: 1px solid #845B1E;
+  border-bottom: 1px solid #D3AB70;
 }
 
 .bg {
@@ -147,6 +177,12 @@ hr {
 
 .display .text {
   padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .display .text {
+    text-align: center;
+  }
 }
 
 .display .row {
@@ -249,5 +285,40 @@ section h1 {
 .innerfooter p a:hover {
   text-decoration: underline;
   color: #f1c6ad;
+}
+
+.carousel {
+  width: 100%;
+  margin: 2% auto;
+}
+
+.carousel .carousel-item {
+  height: 650px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: -100px;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .carousel .carousel-item {
+    height: 300px;
+  }
+}
+
+.carousel .carousel-item img {
+  padding-top: -200px;
+  margin: auto auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.item {
+  position: relative;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
