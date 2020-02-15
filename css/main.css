@@ -195,21 +195,20 @@ hr {
 }
 
 #submit {
-  background-color: #D3AB70;
+  background-color: #A97E3E;
   border: 1px solid #A97E3E;
   color: white;
   width: 100%;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  border-radius: 5px;
+  -webkit-transition: border-radius 300ms;
+  transition: border-radius 300ms;
+  border-radius: 30px;
   font-size: 1rem;
 }
 
 #submit:hover {
-  opacity: 0.8;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border-radius: 0px;
+  border-radius: 2px 30px 2px 30px;
+  background-color: #D3AB70;
+  border-color: #D3AB70;
 }
 
 .booking {
