@@ -32,6 +32,7 @@ $mobile: 767px;
 body{
     background-color: map-get($colors , color-white);
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 .navbar{
